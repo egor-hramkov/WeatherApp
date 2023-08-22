@@ -1,0 +1,33 @@
+
+nav {
+  @apply p-5 bg-white fixed left-96 right-96;
+  > ul {
+    @apply flex items-center justify-evenly;
+    > li {
+      > a {
+        @apply text-amber-500 relative block;
+      }
+    }
+  }
+}
+
+nav > ul > li > a:hover {
+  color: #8dc6ff;
+}
+
+nav > ul > li > a:active {
+   @apply text-amber-500;
+}
+
+nav > ul > li > a:active::after {
+   @apply w-full;
+}
+
+nav > ul > li > a:hover::after {
+  @apply w-full;
+}
+
+nav > ul > li > a::after {
+  content: '';
+  @apply w-0 rounded h-2 bg-slate-600 transition-all duration-300 absolute -bottom-1.5 left-0;
+}
