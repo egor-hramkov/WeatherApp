@@ -1,11 +1,15 @@
 
 nav {
-  @apply p-5 bg-white fixed left-96 right-96;
+  @apply p-5 bg-white fixed left-96 right-96 mx-auto shadow rounded-b-lg;
   > ul {
-    @apply flex items-center justify-evenly;
+    @apply flex items-center justify-between;
     > li {
+      width: 14%;
       > a {
-        @apply text-amber-500 relative block;
+        @apply text-amber-500 relative block text-center;
+        > mat-icon {
+          @apply text-3xl w-full h-full;
+        }
       }
     }
   }
@@ -15,12 +19,12 @@ nav > ul > li > a:hover {
   color: #8dc6ff;
 }
 
-nav > ul > li > a:active {
-   @apply text-amber-500;
+nav > ul > li > a.active {
+   @apply text-[#8dc6ff];
 }
 
-nav > ul > li > a:active::after {
-   @apply w-full;
+nav > ul > li > a.active::after {
+   @apply w-full bg-[#8dc6ff];
 }
 
 nav > ul > li > a:hover::after {
@@ -29,5 +33,5 @@ nav > ul > li > a:hover::after {
 
 nav > ul > li > a::after {
   content: '';
-  @apply w-0 rounded h-2 bg-slate-600 transition-all duration-300 absolute -bottom-1.5 left-0;
+  @apply w-0 rounded h-1 bg-[#8dc6ff] transition-all duration-300 absolute -bottom-1.5 left-0.5;
 }

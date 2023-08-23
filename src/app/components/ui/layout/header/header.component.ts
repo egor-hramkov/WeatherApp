@@ -9,7 +9,7 @@ import { IMenuItem } from "./header.interface";
 export class HeaderComponent {
   menuItems: IMenuItem[] = [
     {
-      path: '/',
+      path: '',
       icon: 'home'
     },
     {
