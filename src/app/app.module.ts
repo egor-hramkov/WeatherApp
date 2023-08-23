@@ -7,23 +7,23 @@ import { LayoutComponent } from './components/ui/layout/layout.component';
 import { HeaderComponent } from "./components/ui/layout/header/header.component";
 import { MatIconModule } from "@angular/material/icon";
 import { RouterModule } from '@angular/router';
+import { SearchComponent } from './components/screens/search/search.component';
+import { WeatherComponent } from './components/screens/weather/weather.component';
+import { FavoriteComponent } from './components/screens/favorite/favorite.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LayoutComponent,
-    HeaderComponent
+    HeaderComponent,
+    SearchComponent,
+    WeatherComponent,
+    FavoriteComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatIconModule,
-    RouterModule.forRoot([
-            {path: 'home', component: AppComponent},
-            {path: 'search', component: AppComponent},
-            {path: 'weather', component: AppComponent},
-            {path: 'favorite', component: AppComponent},
-        ])
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
