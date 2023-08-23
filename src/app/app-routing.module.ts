@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import {AppComponent} from "./app.component";
+import { AppComponent } from "./app.component";
+import { HomeComponent } from "./components/screens/home/home.component";
 
 const routes: Routes = [
-            {path: 'home', component: AppComponent},
+            {path: '', component: HomeComponent},
             {path: 'search', component: AppComponent},
             {path: 'weather', component: AppComponent},
             {path: 'favorite', component: AppComponent},

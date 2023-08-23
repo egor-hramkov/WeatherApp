@@ -6,10 +6,12 @@ import { AppComponent } from './app.component';
 import { LayoutComponent } from './components/ui/layout/layout.component';
 import { HeaderComponent } from "./components/ui/layout/header/header.component";
 import { MatIconModule } from "@angular/material/icon";
-import { RouterModule } from '@angular/router';
 import { SearchComponent } from './components/screens/search/search.component';
 import { WeatherComponent } from './components/screens/weather/weather.component';
 import { FavoriteComponent } from './components/screens/favorite/favorite.component';
+import { HttpClientModule } from "@angular/common/http";
+import { CommonModule } from "@angular/common";
+import { HomeModule } from "./components/screens/home/home.module";
 
 @NgModule({
   declarations: [
@@ -23,7 +25,10 @@ import { FavoriteComponent } from './components/screens/favorite/favorite.compon
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatIconModule
+    MatIconModule,
+    HttpClientModule,
+    CommonModule,
+    HomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

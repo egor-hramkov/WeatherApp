@@ -1,6 +1,6 @@
 
 nav {
-  @apply p-5 bg-white fixed left-96 right-96 mx-auto shadow rounded-b-lg;
+  @apply p-5 bg-white w-6/12 mx-auto shadow rounded-b-lg;
   > ul {
     @apply flex items-center justify-between;
     > li {

@@ -1,0 +1,44 @@
+{
+  "weather": [
+    {
+      "id": 1,
+      "city": "Ульяновск",
+      "temperature": "+26",
+      "precipitions_chance": 0,
+      "humidity": 48,
+      "wind": 4,
+      "description": "Переменная облачность",
+      "image": ""
+    },
+    {
+      "id": 2,
+      "city": "Москва",
+      "temperature": "+30",
+      "precipitions_chance": 0,
+      "humidity": 36,
+      "wind": 6,
+      "description": "Солнечно",
+      "image": ""
+    },
+    {
+      "id": 3,
+      "city": "Рыбинск",
+      "temperature": "+18",
+      "precipitions_chance": 80,
+      "humidity": 60,
+      "wind": 7,
+      "description": "Дождь",
+      "image": ""
+    },
+    {
+      "id": 4,
+      "city": "Санкт-Петербург",
+      "temperature": "+25",
+      "precipitions_chance": 30,
+      "humidity": 50,
+      "wind": 6,
+      "description": "Переменная облачность",
+      "image": ""
+    }
+  ]
+}
